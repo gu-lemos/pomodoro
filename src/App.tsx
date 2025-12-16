@@ -8,7 +8,8 @@ import "./styles/theme.css";
 import "./styles/global.css";
 import { Cycles } from "./components/Cycles";
 import { Button } from "./components/Button";
-import { PlayCircleIcon, StopCircleIcon } from "lucide-react";
+import { PlayCircleIcon } from "lucide-react";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
@@ -46,9 +47,12 @@ export function App() {
 
           <div className="formRow">
             <Button icon={<PlayCircleIcon />} />
-            <Button icon={<StopCircleIcon />} color="red" />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
